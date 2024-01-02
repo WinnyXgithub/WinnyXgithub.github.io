@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WinnyXsong</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <label for="panSlider" class="text1"><-- ซ้าย ขวา --></label>
+    <input type="range" id="panSlider" min="-1" max="1" step="0.1" value="0" onchange="updatePan()">
+    
+    <label for="volumeSlider" class="text1"><-- ลด เสียง เพิ่ม --></label>
+    <input type="range" id="volumeSlider" min="0" max="1" step="0.1" value="1" onchange="updateVolume()">
+
+<div class="container">
+    <audio id="myAudio"></audio>
+
+    <div class="left-column">
+    <h2>เพลง แดนซ์</h2>
+        <button onclick="playMusic('ฟ้ารักพ่อ.flac')">ฟ้ารักพ่อ</button>
+        <button onclick="playMusic('รังสิตมันร้าย.flac')">รังสิตมันร้าย</button>
+        <button onclick="playMusic('บึมๆ.flac')">บึ้มๆ เอ็คจ๊าดด</button>
+        <button onclick="playMusic('หนมครก.flac')">หนมครก</button>
+        <button onclick="playMusic('สเตฟาน.flac')">สเตฟานรำ</button>
+        <button onclick="playMusic('ขี่กวาง.flac')">ให้เธอขี่กวาง</button>
+        <button onclick="playMusic('วัยรุ่นคำมี.flac')">วัยรุ่นคำมี</button>
+        <button onclick="playMusic('เบาะ.flac')">เบาะข้างๆมีคนนั้งยังคะ</button>
+        <button onclick="playMusic('ดาวหาง.flac')">ดาวหางฮัลเลย์</button>
+        <button onclick="playMusic('ขอให้เธอใจดี.flac')">ขอให้เธอใจดี</button>
+        <button onclick="playMusic('ก่อนลา.flac')">ก่อนลา</button>
+    </div>
+
+    <div class="right-column">
+    <h2>เพลง อังกฤษ</h2>
+        <button onclick="playMusic('Marshmello-Alone.flac')">Marshmello-Alone</button>
+        <button onclick="playMusic('stereo-hearts.flac')">Stereo Hearts</button>
+        <button onclick="playMusic('Unstoppable.flac')">Unstoppable</button>
+        <button onclick="playMusic('Tie-me-down.flac')">Tie Me Down</button>
+        <button onclick="playMusic('Copines.flac')">Copines</button>
+        <button onclick="playMusic('8-letters.flac')">8 Letters</button>
+        <button onclick="playMusic('daylight.flac')">Daylight</button>
+        <button onclick="playMusic('stereo-hearts.flac')">That's What l like</button>
+        <button onclick="playMusic('What-it-is.flac')">What it is</button>
+        <button onclick="playMusic('Lonely-Im-So-Lonely.flac')">Lonely I'm So Lonely</button>
+        <button onclick="playMusic('sean kingston.flac')">Sean Kingston</button>
+        <button onclick="playMusic('beautiful girls.flac')">Beautiful Girls</button>
+        <button onclick="playMusic('Lemon tree.flac')">Lemon tree</button>
+        <button onclick="playMusic('Double Take.flac')">Double Take</button>
+        <button onclick="playMusic('Not A Home.flac')">Not A Home</button>
+    </div>
+
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
